@@ -3,59 +3,65 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
     <title>Colin Taaffe Portfolio</title>
 </head>
 
 <body>
-    <header class="header-display">
+    <header class="header">
         <h1>Colin Burner Taaffe</h1>
-        <ul>
-            <li><a href="#About-Me">About Me</a></li>
-            <li><a href="#Work">Work</a></li>
-            <li><a href="#Contact-Me">Contact Me</a></li>
-            <li><a href="#Resume">Resume</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>   
+        </nav>
     </header>
-    
     <section class="bonfire"></section>
-    <main>
-        <section id="About-Me"></section>
-        <h2>About Me:</h2>
-            <section class="me"></section>
-            <p></p>
-        <aside>
-        <h2>Work That I have done</h2>
-            <section id="Work">
-                <p>A Project worked on in class.</p>
-                    <img src="./assets/Images/Screenshot 2024-05-01 131947.png"/>
-                <p>Coming soon.</p>
-                    <img src="assets\Images\Typing on keyboard.jpg" alt="Keyboard Typing Image"/>
-                <p>Coming soon.</p>
-                    <img src="assets\Images\MIT-Coding-Brain-01-press_0.jpg" alt="Big Brain"/>
-            </section>
-        <h2>Contact Me</h2>
-            <section id="Contact-Me">
-                
-            </section>
-        <h2>Resume</h2>
-            <section id="Resume">
-                <img src="./assets/Images/Resume img.jpg"/>
-            </section>
-
-
-        </aside>
-
-
-
-
-
-    </main>
-
-
-
-
+        <figure id="about-me">
+            <img class="img2" src="./assets/Images/Me.jpg" alt="Me and Ragnar img" />
+                <h2>About Me:
+                    <p> 
+                        Here is some information about me!
+                    </p>
+                </h2>
+        </figure>
+        <figure id="work">
+            <img src="./assets/Images/Coming soon3.webp" class="float-right" alt="Coming Soon img"/>
+                <h3>Sample work that I've done:</h3>
+                    <p> 
+                        Here is a link to a website I created in class!
+                    </p>
+        </figure>
+        <figure class="content" id="resume">
+                <img src="./assets/Images/Resume img.jpg" class="float-right" alt="Resume img"/>
+                    <h4>My Resume:</h4>
+                <p>
+                    Click this image to see my resume!
+                </p>
+        </figure>
+        </section>
+        
+    <aside class="sidebar">
+        <article id="contact-me">
+            <section class="content">
+                <figure id="contact-me">
+                        <img src="./assets/Images/contact me.webp" alt="Contact Me img"/>
+                            <h4>Contact Me:</h4>
+                </section>
+                </figure>
+        </article>
+    </aside>
 </body>
+        <footer class="footer">
+            <h5>Thanks for looking! 🔥</h5>
+                <p>
+                    
+                </p>
+        </footer>
 
 </html>
