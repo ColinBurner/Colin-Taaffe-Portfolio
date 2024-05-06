@@ -11,15 +11,16 @@
     margin: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: #4d4d4d;
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-}
 
 figure {
     display: flex;
@@ -67,7 +68,10 @@ p {
 }
 
 nav {
-    padding-top: 275px;
+    padding-top: 10px;
+    margin-left: 0px;
+    border: 0.5rem outset rgb(199, 57, 5);
+    background: linear-gradient(-375deg, orangered 10%, rgb(0, 0, 0));
 }
 
 nav a:hover {
@@ -83,11 +87,14 @@ p a:active {
 }
 
 h1 {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    padding-right: 350px;
     font-size: 80px;
     color: var(--header-orange);
     text-shadow: white 2px 2px 4px;
     font-family: monospace, 'Courier New', Courier, sans-serif;
-    padding: 200px 300px;
 }
 
 h2 {
@@ -99,7 +106,9 @@ h2 {
 }
 
 /*Used an image in CSS to create a background header image*/
-.bonfire-header {
+.bonfire-header h1 {
+    display: flex;
+    align-items: center;
     height: 800px;
     width: 100%;
     background-image: url(./Images/bonfire\ image.png);
@@ -119,15 +128,25 @@ h2 {
 }
 
 .text-group {
+    display: flex;
     text-align: center;
     align-items: center;
 }
 
 .image-group {
+    display: flex;
     border: 3px solid black;
     border-radius: var(--border-radius);
     margin: 10px;
     box-shadow: var(--box-shadow);
+}
+
+.figure {
+    display: flex;
+}
+
+.article {
+    display: flex;
 }
 
 /*Used align-items to center the txt*/
@@ -176,191 +195,74 @@ h2 {
 /*992px for tablets*/
 @media screen and (max-width: 992px) {
     .bonfire-header,
-    h1,
-    nav {
-        width: 800px;
-        font-size: 80px;
-        padding: 195px 10px;
-        height: 100vh;
-        display: flex;
-        align-items: start;
+    h1 {
+        width: 100%;
+        padding: 0px;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 992px) {
-    figure,
-    article,
-    footer {
+    .figure {
         flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: nowrap;
     }
 }
 
 @media screen and (max-width: 992px) {
-    #work.text-group { 
-        display: flex;
-        height: 600px;
-        width: 700px;
-    }
-    #work-image.image-group {
-        display: flex;
-        height: 460px;
-        width: 450px;
+    .article {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 
-@media screen and (max-width: 992px) {
-    #about-me { 
-        display: flex;
-        height: 450px;
-        width: 600px;
-    }
-    #me-image {
-        display: flex;
-        height: 320px;
-        width: 260px;
-    }
-}
 
-@media screen and (max-width: 992px) {
-    #resume.text-group,
-    #contact-me.text-group { 
-        display: flex;
-        height: 325px;
-        width: 700px;
-        text-align: center;
-    }
-    #resume-image.image-group {
-        display: flex;
-        height: 200px;
-        width: 450px;
-    }
-}
-
+   
 /*768px for large smartphones*/
 @media screen and (max-width: 768px) {
     .bonfire-header,
-    h1,
-    nav {
-        width: 800px;
-        font-size: 80px;
-        padding: 140px 10px;
-        height: 100vh;
-        display: flex;
-        align-items: start;
+    h1 {
+        width: 100%;
+        padding: 0px;
+        margin: 0 auto;
     }
 }
-
+    
 @media screen and (max-width: 768px) {
-    figure,
-    article,
-    footer {
+    .figure {
         flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: nowrap;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #work.text-group { 
-        display: flex;
-        height: 600px;
-        width: 700px;
-    }
-    #work-image.image-group {
-        display: flex;
-        height: 460px;
-        width: 450px;
+    .article {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 
-@media screen and (max-width: 768px) {
-    #about-me { 
-        display: flex;
-        height: 450px;
-        width: 600px;
-    }
-    #me-image {
-        display: flex;
-        height: 320px;
-        width: 260px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #resume.text-group,
-    #contact-me.text-group { 
-        display: flex;
-        height: 325px;
-        width: 700px;
-        text-align: center;
-    }
-    #resume-image.image-group {
-        display: flex;
-        height: 200px;
-        width: 450px;
-    }
-}
 
 /*576px for small smartphones*/
 @media screen and (max-width: 576px) {
     .bonfire-header,
-    h1,
-    nav {
-        width: 800px;
-        font-size: 80px;
-        padding: 94px 10px;
-        height: 100vh;
-        display: flex;
-        align-items: start;
+    h1 {
+        width: 100%;
+        padding: 0px;
+        margin: 0 auto;
     }
 }
-
+    
 @media screen and (max-width: 576px) {
-    figure,
-    article,
-    footer {
+    .figure {
         flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: nowrap;
     }
 }
 
 @media screen and (max-width: 576px) {
-    #work.text-group { 
-        display: flex;
-        height: 600px;
-        width: 700px;
-    }
-    #work-image.image-group {
-        display: flex;
-        height: 460px;
-        width: 450px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #about-me { 
-        display: flex;
-        height: 450px;
-        width: 600px;
-    }
-    #me-image {
-        display: flex;
-        height: 320px;
-        width: 260px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #resume.text-group,
-    #contact-me.text-group { 
-        display: flex;
-        height: 325px;
-        width: 700px;
-        text-align: center;
-    }
-    #resume-image.image-group {
-        display: flex;
-        height: 200px;
-        width: 450px;
+    .article {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
