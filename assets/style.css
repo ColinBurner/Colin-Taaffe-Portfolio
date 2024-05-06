@@ -194,9 +194,8 @@ h2 {
 
 /*992px for tablets*/
 @media screen and (max-width: 992px) {
-    .bonfire-header,
-    h1 {
-        width: 100%;
+    .bonfire-header {
+        width: 125%;
         padding: 0px;
         margin: 0 auto;
     }
@@ -220,9 +219,8 @@ h2 {
    
 /*768px for large smartphones*/
 @media screen and (max-width: 768px) {
-    .bonfire-header,
-    h1 {
-        width: 100%;
+    .bonfire-header {
+        width: 160%;
         padding: 0px;
         margin: 0 auto;
     }
@@ -245,9 +243,8 @@ h2 {
 
 /*576px for small smartphones*/
 @media screen and (max-width: 576px) {
-    .bonfire-header,
-    h1 {
-        width: 100%;
+    .bonfire-header {
+        width: 250%;
         padding: 0px;
         margin: 0 auto;
     }
