@@ -34,7 +34,6 @@ article {
 /*Used a linear gradient to "pretty up" the background for this section*/
 /*Used border-radius to round the corners of the box*/
 section {
-    display: flex;
     border: 3px solid orangered;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -55,7 +54,7 @@ a {
     margin-left: 20px;
     margin-right: 0px;
     font-size: 30px;
-    display: inline-block;
+    display: inline-flex;
     margin: 0px 15px 20px 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -68,6 +67,7 @@ p {
 }
 
 nav {
+    display: flex;
     padding-top: 10px;
     margin-left: 0px;
     border: 0.5rem outset rgb(199, 57, 5);
@@ -89,7 +89,6 @@ p a:active {
 
 h1 {
     display: flex;
-    flex-direction: center;
     justify-content: center;
     padding-right: 350px;
     font-size: 80px;
@@ -115,6 +114,7 @@ h2 {
     background-image: url(./Images/bonfire\ image.png);
     background-size: cover;
     background-position: center;
+    flex: 1 0 auto;
 }
 
 .footer {
@@ -144,10 +144,13 @@ h2 {
 
 .figure {
     display: flex;
+    flex: 1 0 auto;
+
 }
 
 .article {
     display: flex;
+    flex: 1 0 auto;
 }
 
 /*Used align-items to center the txt*/
