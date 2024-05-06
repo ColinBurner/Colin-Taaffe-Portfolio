@@ -16,6 +16,11 @@ body {
     min-height: 100vh;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 figure {
     display: flex;
     justify-content: space-around;
@@ -41,7 +46,6 @@ section {
     text-shadow: var(--black) 2px 2px 4px;
     box-shadow: black 3px 3px 4px;
 }
-
 
 a {
     color: #ffffff;
@@ -98,7 +102,7 @@ h2 {
 .bonfire-header {
     height: 800px;
     width: 100%;
-    background-image: url("./Images/bonfire\ image.png");
+    background-image: url(./Images/bonfire\ image.png);
     background-size: cover;
     background-position: center;
 }
@@ -129,7 +133,7 @@ h2 {
 /*Used align-items to center the txt*/
 #about-me {
     max-width: 600px;
-    margin: 25px 0px 0px 10px;
+    margin: 25px 25px 0px 25px;
     height: 600px;
 }
 
@@ -141,7 +145,7 @@ h2 {
 
 #work {
     padding: 40px;
-    margin: 25px 10px 0px 10px;
+    margin: 25px 25px 0px 25px;
     width: 1200px;
     height: 600px;
 }
@@ -152,26 +156,211 @@ h2 {
 }
 
 #resume {
-    margin: 25px 0px 0px 30px;
-    padding: 50px;
+    margin: 25px 25px 0px 25px;
     width: 920px;
     height: 400px;
 }
 
 #resume-image {
     min-height: 300px;
-    width: 400px;
+    width: 375px;
 }
 
 #contact-me {
-    margin: 25px 0px 0px 10px;
+    margin: 25px 25px 0px 25px;
     padding: 50px;
     width: 920px;
     height: 400px;
-    
 }
 
-#contact-me-image {
-    max-height: 325px;
-    width: 300px;
+/*992px for tablets*/
+@media screen and (max-width: 992px) {
+    .bonfire-header,
+    h1,
+    nav {
+        width: 800px;
+        font-size: 80px;
+        padding: 195px 10px;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    figure,
+    article,
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #work.text-group { 
+        display: flex;
+        height: 600px;
+        width: 700px;
+    }
+    #work-image.image-group {
+        display: flex;
+        height: 460px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #about-me { 
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+    #me-image {
+        display: flex;
+        height: 320px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #resume.text-group,
+    #contact-me.text-group { 
+        display: flex;
+        height: 325px;
+        width: 700px;
+        text-align: center;
+    }
+    #resume-image.image-group {
+        display: flex;
+        height: 200px;
+        width: 450px;
+    }
+}
+
+/*768px for large smartphones*/
+@media screen and (max-width: 768px) {
+    .bonfire-header,
+    h1,
+    nav {
+        width: 800px;
+        font-size: 80px;
+        padding: 140px 10px;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    figure,
+    article,
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #work.text-group { 
+        display: flex;
+        height: 600px;
+        width: 700px;
+    }
+    #work-image.image-group {
+        display: flex;
+        height: 460px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about-me { 
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+    #me-image {
+        display: flex;
+        height: 320px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #resume.text-group,
+    #contact-me.text-group { 
+        display: flex;
+        height: 325px;
+        width: 700px;
+        text-align: center;
+    }
+    #resume-image.image-group {
+        display: flex;
+        height: 200px;
+        width: 450px;
+    }
+}
+
+/*576px for small smartphones*/
+@media screen and (max-width: 576px) {
+    .bonfire-header,
+    h1,
+    nav {
+        width: 800px;
+        font-size: 80px;
+        padding: 94px 10px;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    figure,
+    article,
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #work.text-group { 
+        display: flex;
+        height: 600px;
+        width: 700px;
+    }
+    #work-image.image-group {
+        display: flex;
+        height: 460px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #about-me { 
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+    #me-image {
+        display: flex;
+        height: 320px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #resume.text-group,
+    #contact-me.text-group { 
+        display: flex;
+        height: 325px;
+        width: 700px;
+        text-align: center;
+    }
+    #resume-image.image-group {
+        display: flex;
+        height: 200px;
+        width: 450px;
+    }
 }
