@@ -14,6 +14,7 @@
 header {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
 
 figure {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -34,6 +36,7 @@ article {
 /*Used a linear gradient to "pretty up" the background for this section*/
 /*Used border-radius to round the corners of the box*/
 section {
+    display: flex;
     border: 3px solid orangered;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -48,6 +51,7 @@ section {
 }
 
 a {
+    display: flex;
     color: #ffffff;
     text-shadow: orangered 2px 2px 4px;
     text-decoration: none;
@@ -55,7 +59,7 @@ a {
     margin-right: 0px;
     font-size: 30px;
     display: inline-flex;
-    margin: 0px 15px 20px 10px;
+    margin: 10px 15px 20px 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     list-style-type: none;
@@ -68,7 +72,7 @@ p {
 
 nav {
     display: flex;
-    padding-top: 10px;
+    justify-content: right;
     margin-left: 0px;
     border: 0.5rem outset rgb(199, 57, 5);
     background: linear-gradient(-375deg, orangered 10%, rgb(0, 0, 0));
@@ -76,7 +80,7 @@ nav {
 }
 
 nav a:hover {
-    color: orangered;
+    color: black;
 }
 
 p a:hover {
@@ -89,12 +93,14 @@ p a:active {
 
 h1 {
     display: flex;
-    justify-content: center;
-    padding-right: 350px;
+    flex-wrap: wrap;
+    justify-content: left;
     font-size: 80px;
     color: var(--header-orange);
     text-shadow: white 2px 2px 4px;
     font-family: monospace, 'Courier New', Courier, sans-serif;
+    background-color: rgb(17, 16, 16);
+    padding: 10px 0px 15px 10px;
 }
 
 h2 {
@@ -106,15 +112,19 @@ h2 {
 }
 
 /*Used an image in CSS to create a background header image*/
-.bonfire-header h1 {
-    display: flex;
-    align-items: center;
+.bonfire-header div {
+    flex-wrap: wrap;
     height: 800px;
-    width: 1920px;
+    width: 100%;
     background-image: url(./Images/bonfire\ image.png);
     background-size: cover;
     background-position: center;
-    flex: 1 0 auto;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--header-orange);
+    text-shadow: white 2px 2px 4px;
+    align-content: end;
+    padding: 0px 0px 10px 10px;
 }
 
 .footer {
@@ -145,7 +155,6 @@ h2 {
 .figure {
     display: flex;
     flex: 1 0 auto;
-
 }
 
 .article {
@@ -153,7 +162,6 @@ h2 {
     flex: 1 0 auto;
 }
 
-/*Used align-items to center the txt*/
 #about-me {
     max-width: 600px;
     margin: 25px 25px 0px 25px;
@@ -215,12 +223,10 @@ h2 {
 @media screen and (max-width: 992px) {
     .article {
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 }
 
-
-   
 /*768px for large smartphones*/
 @media screen and (max-width: 768px) {
     .bonfire-header {
@@ -240,10 +246,9 @@ h2 {
 @media screen and (max-width: 768px) {
     .article {
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 }
-
 
 /*576px for small smartphones*/
 @media screen and (max-width: 576px) {
@@ -264,6 +269,6 @@ h2 {
 @media screen and (max-width: 576px) {
     .article {
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 }
