@@ -377,3 +377,25 @@ p.hover-text:hover .second {
     }
 }
     
+@media screen and (max-width: 576px) {
+    .about-me,
+    p {
+        width: 104%; 
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work,
+    #border {
+        width: 104%
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .article,
+    h4 {
+        width: 98%;
+        font-size: 20px;
+    }
+}
