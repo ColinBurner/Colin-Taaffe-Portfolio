@@ -1,49 +1,41 @@
 # Colin-Taaffe-Portfolio
 A portfolio to showcase my work as a developer.
 
-# Editing this README
+## What I did to accomplish goals in this project
+I used semantic HTML elements to define the structure of the webpage. I used anchor tags with a navigation bar to create clickable links that take you to different parts of the page upon click. I used CSS to create background images for each different section of the page. I used CSS to style the page with different fonts, font sizes, colors, background colors and much much more. I used CSS to create media querys for the purpose of making the page responsive on smaller devices.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## How I accomplished my goals with this project
+I used semantic HTML elements to make the page accessible. I used different selectors in CSS to target certain HTML elements to make the page look stylish. I used media querys for the purpose of making the page more responsive on smaller devices.
 
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+![Screenshot 2024-05-08 132534](https://github.com/ColinBurner/Colin-Taaffe-Portfolio/assets/85810714/c8df5690-ad77-4a33-ac05-1b9a00506b3c)
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+In this screenshot you can see the navbar with our anchor tags, upon clicking an individual one they take you to that specific section of the page.
+
+![Screenshot 2024-05-08 132558](https://github.com/ColinBurner/Colin-Taaffe-Portfolio/assets/85810714/ded8750f-d852-438c-9b47-2a7297a8d842)
+
+This screenshot demonstrates the section of the page that the "About Me" anchor tag in the nav bar will take you to when clicked.
+
+![Portfolio screenshot](https://github.com/ColinBurner/Colin-Taaffe-Portfolio/assets/85810714/b5f723a8-1871-4830-9727-e9c95ed45e25)
+
+This screenshot shows the entire webpage.
+
+![HTML functionality Portfolio screenshot](https://github.com/ColinBurner/Colin-Taaffe-Portfolio/assets/85810714/601b3457-550f-4146-80a5-937d6f2c78ce)
+
+This screenshot shows the functionality of the anchor tag, the circled #about-me anchor tag and how it is connected to the actual About Me section using an id.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+There are 4 links in the nav bar at the top of the page, clicking one of them will have the UI take you to that specific area of the page. The coming soon image can be clicked and will take you to a page I worked on in a class mini-project. Clicking images in the sections will currently take you to Google.com as a placeholder until we do more projects in class. Clicking the resume image will take you to Google.com as well for now until I build my resume. Clicking items in the contact me section will do different things, the X one will take you to my X profile. The email one will pull open your own email and address a new email to my email address (used mailto). Hovering mouse over Phone# will reveal my phone number. Finally, clicking GitHub will take you to my GitHub profile.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## For support issues, contact me at the email below
+
+<a href="mailto: b2rn3r@yahoo.com">b2rn3r@yahoo.com</a>
 
 ## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+In the future I plan to continue adding to this portfolio with assignments we finish as the class goes on. I also plan on introducing JavaScript to the page and implementing other things as I learn them in class.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+N/A
 
 ## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+MIT
