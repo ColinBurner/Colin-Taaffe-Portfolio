@@ -377,14 +377,9 @@ p.hover-text:hover .second {
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .work,
-    #border {
-        width: 98%;
-    }
-}
-    
-@media screen and (min-width: 576px) and (max-width: 768px) {
+    #border,
     .about-me {
-        width: 98%;
+        width: 100%;
     }
 }
 
@@ -407,7 +402,7 @@ p.hover-text:hover .second {
     .article,
     h4 {
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
