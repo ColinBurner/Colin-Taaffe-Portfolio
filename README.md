@@ -27,6 +27,10 @@ This screenshot shows the functionality of the anchor tag, the circled #about-me
 ## Usage
 There are 4 links in the nav bar at the top of the page, clicking one of them will have the UI take you to that specific area of the page. The coming soon image can be clicked and will take you to a page I worked on in a class mini-project. Clicking images in the sections will currently take you to Google.com as a placeholder until we do more projects in class. Clicking the resume image will take you to Google.com as well for now until I build my resume. Clicking items in the contact me section will do different things, the X one will take you to my X profile. The email one will pull open your own email and address a new email to my email address (used mailto). Hovering mouse over Phone# will reveal my phone number. Finally, clicking GitHub will take you to my GitHub profile.
 
+## Here is a link to the deployed webpage:
+
+https://colinburner.github.io/Colin-Taaffe-Portfolio/
+
 ## For support issues, contact me at the email below
 
 <a href="mailto: b2rn3r@yahoo.com">b2rn3r@yahoo.com</a>
