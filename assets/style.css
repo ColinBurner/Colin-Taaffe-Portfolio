@@ -415,6 +415,13 @@ p.hover-text:hover .second {
 }
 
 @media screen and (max-width: 576px) {
+    h1
+     {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
     .about-me,
     p {
         width: 100%; 
