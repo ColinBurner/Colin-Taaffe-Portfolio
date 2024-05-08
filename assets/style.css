@@ -205,7 +205,7 @@ span {
     margin-top: 20px;
     margin-left: 20px;
     padding: 60px;
-    width: 850px;
+    width: 100%;
     height: 400px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(100deg, orangered 10%, gray);
