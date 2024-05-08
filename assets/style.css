@@ -354,7 +354,7 @@ p.hover-text:hover .second {
 
 /*used media querys to make the page responsive on screens smaller than a desktop ie. smart phones and tablets*/
 /*768px to 992px for tablets*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .bonfire-header,
     header,
     nav {
@@ -362,20 +362,20 @@ p.hover-text:hover .second {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     h2 {
         padding: 0px 0px 0px 0px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
 img#border {
         width: 100%;
     }
 }
 
 /*576px to 768px for large smartphones*/
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .bonfire-header,
     header,
     nav {
@@ -383,27 +383,27 @@ img#border {
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .work,
     .about-me {
         width: 100%;
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     img#border {
         width: 100%;
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     p {
         width: 100%;
         font-size: 15px; 
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .group,
     .group2 {
         width: 100%;
@@ -411,7 +411,7 @@ img#border {
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .article,
     h4 {
         width: 100%;
