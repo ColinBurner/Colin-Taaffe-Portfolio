@@ -144,6 +144,11 @@ h4 {
     text-shadow: var(--text-shadow-black);
 }
 
+span {
+    display: flex;
+    
+}
+
 /*Used an image in CSS to create a background header image*/
 .bonfire-header {
     flex-wrap: wrap;
@@ -196,12 +201,11 @@ h4 {
     display: flex;
     border: 3px solid orangered;
     border-radius: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
     padding: 60px;
-    width: 90%;
+    width: 850px;
     height: 400px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(100deg, orangered 10%, gray);
@@ -355,7 +359,7 @@ p.hover-text:hover .second {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     h2 {
         padding: 0px 0px 0px 0px;
     }
@@ -410,14 +414,14 @@ p.hover-text:hover .second {
 @media screen and (max-width: 576px) {
     .bonfire-header
      {
-        width: 110%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 576px) {
     .about-me,
     p {
-        width: 104%; 
+        width: 100%; 
         font-size: 15px;
     }
 }
@@ -425,7 +429,7 @@ p.hover-text:hover .second {
 @media screen and (max-width: 576px) {
     .work,
     #border {
-        width: 104%
+        width: 100%
     }
 }
 
