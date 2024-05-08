@@ -79,7 +79,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     margin-left: 0px;
     border: 0.5rem outset rgb(199, 57, 5);
     background: linear-gradient(-375deg, orangered 10%, rgb(0, 0, 0));
