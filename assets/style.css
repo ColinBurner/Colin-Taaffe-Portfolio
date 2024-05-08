@@ -3,6 +3,7 @@
     --black: black;
     --border-radius: 50px;
     --box-shadow: orangered 2px 2px 4px;
+    --box-shadow-black: black 3px 3px 4px;
 }
 
 * {
@@ -15,9 +16,12 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #4d4d4d;
     min-height: 100vh;
 }
@@ -47,7 +51,7 @@ section {
     background: linear-gradient(100deg, orangered 10%, gray);
     color: white;
     text-shadow: var(--black) 2px 2px 4px;
-    box-shadow: black 3px 3px 4px;
+    box-shadow: var(--box-shadow-black);
 }
 
 a {
@@ -106,8 +110,11 @@ h1 {
 h2 {
     margin-bottom: 20px;
     font-size: 40px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-right: 35px;
+    padding-top: 35px;
     text-shadow: black 5px 3px 4px;
 }
 
@@ -146,6 +153,7 @@ h4 {
     text-shadow: white 2px 2px 4px;
     align-content: end;
     padding: 0px 0px 10px 10px;
+    flex:  0 1 auto;
 }
 
 .about-me {
@@ -155,15 +163,18 @@ h4 {
     height: 300px;
     text-align: center;
     padding-left: 40px;
+    flex:  0 1 auto;
 }
 
 .work {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 99%;
     margin: 10px;
-    height: 600px;
-    text-align: right;
-    justify-content: space-around;
+    height: 650px;
+    padding: 15px;
+    flex:  0 1 auto;
 }
 
 .group {
@@ -173,9 +184,11 @@ h4 {
     width: 99%;
     height: auto;
     text-align: left;
+    flex:  0 1 auto;
 }
 
 .group2 {
+    display: flex;
     border: 3px solid orangered;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -188,10 +201,20 @@ h4 {
     background: linear-gradient(100deg, orangered 10%, gray);
     color: white;
     text-shadow: var(--black) 2px 2px 4px;
-    box-shadow: black 3px 3px 4px;
+    box-shadow: var(--box-shadow-black);
+    flex:  0 1 auto;
+}
+
+.group3 {
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    flex:  0 1 auto;
 }
 
 .article {
+    display: flex;
+    justify-content: space-around;
     padding: 15px;
     border: 3px solid orangered;
     border-radius: 25px;
@@ -203,10 +226,12 @@ h4 {
     background: linear-gradient(100deg, orangered 10%, gray);
     color: white;
     text-shadow: var(--black) 2px 2px 4px;
-    box-shadow: black 3px 3px 4px;
+    box-shadow: var(--box-shadow-black);
+    flex:  0 1 auto;
 }
 
 .footer {
+    flex: auto;
     margin: 15px;
     line-height: 2px;
     padding: 50px 0px;
@@ -233,10 +258,14 @@ p.hover-text:hover .second {
     display: inline;
 }
 
+#work-image {
+    flex-wrap: wrap;
+}
+
 #background-image1 {
     display: flex;
-    height: 275px;
-    width: 400px;
+    height: 200px;
+    width: 500px;
     background-image: url(./Images/Typing\ on\ keyboard.jpg);
     background-size: cover;
     background-position: center;
@@ -246,14 +275,14 @@ p.hover-text:hover .second {
     text-shadow: white 2px 2px 4px;
     border: 3px solid black;
     border-radius: 25px;
-    box-shadow: black 2px 2px 4px;
+    box-shadow: var(--box-shadow-black);
     
 }
 
 #background-image2 {
     display: flex;
-    height: 275px;
-    width: 400px;
+    height: 200px;
+    width: 500px;
     background-image: url(./Images/Computer\ coding.jpg);
     background-size: cover;
     background-position: center;
@@ -264,13 +293,13 @@ p.hover-text:hover .second {
     align-content: end;
     border: 3px solid black;
     border-radius: 25px;
-    box-shadow: black 2px 2px 4px;
+    box-shadow: var(--box-shadow-black);
 }
 
 #background-image3 {
     display: flex;
-    height: 275px;
-    width: 400px;
+    height: 200px;
+    width: 500px;
     background-image: url(./Images/mouse\ work.jpg);
     background-size: cover;
     background-position: center;
@@ -281,13 +310,13 @@ p.hover-text:hover .second {
     align-content: end;
     border: 3px solid black;
     border-radius: 25px;
-    box-shadow: black 2px 2px 4px;
+    box-shadow: var(--box-shadow-black);
 }
 
 #background-image4 {
     display: flex;
-    height: 275px;
-    width: 400px;
+    height: 200px;
+    width: 500px;
     background-image: url(./Images/Resume\ img.jpg);
     background-size: cover;
     background-position: center;
@@ -298,32 +327,17 @@ p.hover-text:hover .second {
     align-content: end;
     border: 3px solid black;
     border-radius: 25px;
-    box-shadow: black 2px 2px 4px;
+    box-shadow: var(--box-shadow-black);
 }
 
 #border {
    border: 3px solid black;
    border-radius: 30px;
+   box-shadow: var(--box-shadow-black);
 }
 
-/*992px for tablets*/
-@media screen and (max-width: 992px) {
-    .bonfire-header,
-    header,
-    nav {
-        width: 103%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .work,
-    #border {
-        width: 99%;
-    }
-}
-
-/*768px for large smartphones*/
-@media screen and (max-width: 768px) {
+/*768px to 992px for tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .bonfire-header,
     header,
     nav {
@@ -331,52 +345,67 @@ p.hover-text:hover .second {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992) {
+    h2 {
+        padding: 0px 0px 0px 0px;
+    
+    }
+}
+
+
+/*576px to 768px for large smartphones*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .bonfire-header,
+    header,
+    nav {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .work,
     #border {
         width: 98%;
     }
 }
     
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .about-me {
         width: 98%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     p {
-        width: 110%;
-        font-size: 20px; 
+        width: 100%;
+        font-size: 15px; 
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .group,
     .group2 {
-        width: 98%;
-        margin: 5px 20px 20px 20px;
+        width: 97%;
+        margin: 20px 20px 20px 12px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .article,
     h4 {
-        width: 98%;
+        width: 100%;
         font-size: 30px;
     }
 }
 
 /*576px for small smartphones*/
 @media screen and (max-width: 576px) {
-    .bonfire-header,
-    header,
-    nav {
-        width: 107%;
-        
+    .bonfire-header
+     {
+        width: 110%;
     }
 }
-    
+
 @media screen and (max-width: 576px) {
     .about-me,
     p {
@@ -397,5 +426,12 @@ p.hover-text:hover .second {
     h4 {
         width: 98%;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    span.first
+     {
+        margin-left: -10px;
     }
 }
