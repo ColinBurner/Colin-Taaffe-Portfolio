@@ -129,7 +129,7 @@ h3 {
     color: white;
     background-color: orangered;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 25px;
     padding-right: 35px;
     text-shadow: var(--text-shadow-black);
     padding: 10px;
@@ -345,9 +345,10 @@ p.hover-text:hover .second {
 
 /*used the border id to wrap all the images in borders*/
 #border {
-   border: 3px solid black;
-   border-radius: 30px;
-   box-shadow: var(--box-shadow-black);
+    display: flex;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow-black);
 }
 
 /*used media querys to make the page responsive on screens smaller than a desktop ie. smart phones and tablets*/
@@ -366,6 +367,12 @@ p.hover-text:hover .second {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+img#border {
+        width: 100%;
+    }
+}
+
 /*576px to 768px for large smartphones*/
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .bonfire-header,
@@ -377,8 +384,13 @@ p.hover-text:hover .second {
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .work,
-    #border,
     .about-me {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    img#border {
         width: 100%;
     }
 }
@@ -393,7 +405,7 @@ p.hover-text:hover .second {
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .group,
     .group2 {
-        width: 97%;
+        width: 100%;
         margin: 20px 20px 20px 12px;
     }
 }
@@ -439,7 +451,7 @@ p.hover-text:hover .second {
 @media screen and (max-width: 576px) {
     .article,
     h4 {
-        width: 98%;
+        width: 100%;
         font-size: 20px;
     }
 }
