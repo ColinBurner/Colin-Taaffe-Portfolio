@@ -31,13 +31,16 @@ body {
 
 article {
     display: flex;
+    justify-content: center;
+    flex: 0 1 auto;
 }
 
 figure {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 15px 15px 15px 15px;
+    flex: 0 1 auto;
 }
 
 /*Used a linear gradient to "pretty up" the background for the section element*/
@@ -124,8 +127,7 @@ h2 {
 }
 
 h3 {
-    display: flex;
-    text-align: start;
+    display: block;
     color: white;
     background-color: orangered;
     margin-bottom: 20px;
@@ -147,7 +149,6 @@ h4 {
 
 span {
     display: flex;
-    
 }
 
 /*Used an image in CSS to create a background header image*/
@@ -218,7 +219,7 @@ span {
 
 .group3 {
     display: flex;
-    align-items: left;
+    align-self: center;
     border: 3px solid black;
     flex:  0 1 auto;
 }
